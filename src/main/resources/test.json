@@ -1,0 +1,22 @@
+{
+  "preprocessingSteps": [
+    {
+      "variableName": "prodgroup",
+      "transformation": "MAP_VALUES",
+      "params": {
+        "outputName": "prodgroup_mapped",
+        "dataType": "INTEGER",
+        "opType": "CATEGORICAL",
+        "valueMap": [
+          { "input": "prodgrp1", "output": 1 },
+          { "input": "prodgrp2", "output": 2 },
+          { "input": "prodgrp3", "output": 3 }
+        ],
+        "defaultValue": 0,
+        "mapMissingTo": -1,
+        "inputColumn": "source_value",
+        "outputColumn": "target_value"
+      }
+    }
+  ]
+}
